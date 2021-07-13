@@ -14,7 +14,7 @@ const Messages = styled.div`
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    &:-webkit-scrollbar {
+    &::-webkit-scrollbar {
       display: none;
     }
 `;
@@ -41,6 +41,12 @@ const MessageBox = styled.textarea`
     margin-bottom: 3px;
     color: (white, white);
     margin-left: 10px;
+    &:focus-visible {
+      outline: none;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
 `;
 
 const Image = styled.img`
