@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "PROD=true node index.js",
-    "postinstall": "cd ./client && npm i"
+    "start": "PROD=true node index.js"
   },
   "repository": {
     "type": "git",
