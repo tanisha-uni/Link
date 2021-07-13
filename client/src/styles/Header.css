@@ -1,0 +1,22 @@
+.logo-img{
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
+
+.link-text{
+  font-size: 30px;
+  align-self: center;
+  padding-left: 50px;
+}
+
+.date-time{
+  align-self: center;
+  padding-left: 1200px;
+}

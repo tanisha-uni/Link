@@ -1,0 +1,19 @@
+.homePage-img{
+  width: 800px;
+  height: 500px;
+}
+
+.container1{
+  padding: 10px;
+  background-color: yellowgreen;
+}
+
+.room-button{
+  height: 20px;
+}
+
+.main-text{
+  padding: 50px;
+  padding-right: 300px;
+  padding-left: 200px;
+}

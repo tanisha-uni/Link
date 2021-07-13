@@ -1,0 +1,46 @@
+.container-room{
+  background-color: pink;
+}
+
+.header-room{
+  background-color: aqua;
+  height: 30px;
+}
+
+.body-room{
+  background-color: rgb(72, 61, 61);
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.videos-room{
+  background-color: rgb(72, 61, 61);
+  width: 80%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video{
+  width: 47%;
+  height: auto;
+  margin: 10px;
+  
+}
+
+.chat-room{
+    height: 95vh;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(243, 239, 239);
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-left: 2px;
+    margin-right: 20px;
+}
+
+
