@@ -20,7 +20,9 @@
   margin: 10px;
   display: flex;
   flex-direction: column;
+  margin-top: 10%;
 }
+
 
 .video{
   width: 47%;
@@ -36,11 +38,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(243, 239, 239);
+    background-color:rgb(245, 243, 243);
     border-radius: 15px;
     border: 2px solid black;
     margin-left: 2px;
     margin-right: 20px;
 }
 
+.buttons{
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+.share-button{
+  margin-right: 30px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.picture-button{
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-size: 20px;
+}
 

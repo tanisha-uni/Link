@@ -1,7 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import io from "socket.io-client";
-import { PartnerMessage, PartnerRow, MyMessage, MyRow, ButtonMessage, MessageBox, Messages, CallText } from '../styles/MessagesStyles'
+import { PartnerMessage, PartnerRow, MyMessage, MyRow, ButtonMessage, MessageBox, Messages, CallText, Image, SendMessage } from '../styles/MessagesStyles'
 import '../styles/RoomStyles.css'
+import message from '../assets/images/message.png'
+import Header from '../components/Header'
 
 
 const Room = (props) => {
@@ -15,7 +17,6 @@ const Room = (props) => {
     const sendChannel = useRef();
     const [text, setText] = useState("");
     const [messages, setMessages] = useState([]);
-  //
 
     useEffect(() => {
             
@@ -217,22 +218,26 @@ const Room = (props) => {
                     <video className='video' muted autoPlay ref={userVideo} />
                     <video className='video' autoPlay ref={partnerVideo} /> 
                     </div>
-                    <div>
-                    <button onClick={shareScreen}>Share screen</button>
-                    <button onClick={requestPictureInPicture}>Picture In Picture</button>
+
+                    <div className ='buttons'>
+                    <button className = 'share-button' onClick={shareScreen}>Share screen</button>
+                    <button className = 'picture-button' onClick={requestPictureInPicture}>Picture In Picture</button>
                     </div>
                 </div>
 
                 <div className='chat-room'>
-                    <CallText>In-Call Messagess</CallText>
+                    <CallText>In-Call Messages</CallText>
+                 
                 <Messages className = "messages">
                  {messages.map(renderMessage)}
                 </Messages>
-                    <div style={{ display: 'flex', width: '95%', marginTop: '10px'}}>
-                    <MessageBox value={text} onChange={handleChange} placeholder="..." />
-                        <ButtonMessage onClick={sendMessage}>
-                    </ButtonMessage>
-                </div>
+                <SendMessage >
+                    <MessageBox value={text} onChange={handleChange} placeholder="  " />
+                    < Image
+                            src={message}
+                            onClick={sendMessage}
+                    />
+                </SendMessage>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 // import logo from '../assets/images/logo.png'
 import '../styles/Header.css'
+import logo from '../assets/images/logo.png'
 
 const fullDate = new Date();
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -12,16 +13,18 @@ const date = fullDate.getDate()
 const hours = fullDate.getHours()
 const minute = minutes[fullDate.getMinutes()]
 
+
+
 export default function Header() {
   return (
     <div className='container'>
-      {/* <img
+      <img
         src={logo}
         alt='webApp logo'
         className='logo-img'
-      /> */}
+      />
       <p className='link-text'>Link</p>
-      <div className='date-time'>{hours}:{minute}~ {day},{month} {date}</div>
+      <div className='date-time'>{month} {date}</div>
     </div>
   )
 }

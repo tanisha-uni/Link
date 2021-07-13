@@ -17,16 +17,17 @@ const CreateRoom = (props) => {
       <Header />
       <div className='container1'>
         <div className='main-text'>
-          <p>Video Call Join</p>
+          <p>One-One Video Calls</p>
+          <p>Click on the button to create a room, and generate a link</p>
           <button onClick={create}
             className='room-button'
           > Create Room
           </button>
         </div>
-      {/* <img
+      <img
         src={homePage}
         className='homePage-img'
-      /> */}
+      />
       </div>
       </div>
     )
